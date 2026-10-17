@@ -36,9 +36,7 @@ selected_users = st.sidebar.multiselect(
 
 severities = ["High", "Medium", "Low", "Informational"]
 available_severities = [
-    severity
-    for severity in severities
-    if severity in analyzed["severity"].values
+    severity for severity in severities if severity in analyzed["severity"].values
 ]
 selected_severities = st.sidebar.multiselect(
     "Severity",
@@ -63,11 +61,7 @@ filtered = analyzed[
 total_events = len(filtered)
 high_risk = int((filtered["severity"] == "High").sum())
 flagged_events = int((filtered["risk_score"] > 0).sum())
-average_risk = (
-    round(float(filtered["risk_score"].mean()), 1)
-    if total_events
-    else 0
-)
+average_risk = round(float(filtered["risk_score"].mean()), 1) if total_events else 0
 
 col1, col2, col3, col4 = st.columns(4)
 
