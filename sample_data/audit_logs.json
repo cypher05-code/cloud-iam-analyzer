@@ -1,0 +1,73 @@
+
+[
+  {
+    "event_id": "EVT001",
+    "timestamp": "2026-10-15T09:15:00Z",
+    "user": "alice",
+    "source_ip": "203.0.113.10",
+    "event_name": "ConsoleLogin",
+    "status": "Success",
+    "role": "Developer",
+    "privileged": false
+  },
+  {
+    "event_id": "EVT002",
+    "timestamp": "2026-10-15T09:20:00Z",
+    "user": "bob",
+    "source_ip": "198.51.100.25",
+    "event_name": "ConsoleLogin",
+    "status": "Failure",
+    "role": "Admin",
+    "privileged": true
+  },
+  {
+    "event_id": "EVT003",
+    "timestamp": "2026-10-15T09:21:00Z",
+    "user": "bob",
+    "source_ip": "198.51.100.25",
+    "event_name": "ConsoleLogin",
+    "status": "Failure",
+    "role": "Admin",
+    "privileged": true
+  },
+  {
+    "event_id": "EVT004",
+    "timestamp": "2026-10-15T09:22:00Z",
+    "user": "bob",
+    "source_ip": "198.51.100.25",
+    "event_name": "ConsoleLogin",
+    "status": "Failure",
+    "role": "Admin",
+    "privileged": true
+  },
+  {
+    "event_id": "EVT005",
+    "timestamp": "2026-10-15T09:25:00Z",
+    "user": "bob",
+    "source_ip": "198.51.100.25",
+    "event_name": "CreateAccessKey",
+    "status": "Success",
+    "role": "Admin",
+    "privileged": true
+  },
+  {
+    "event_id": "EVT006",
+    "timestamp": "2026-10-15T09:30:00Z",
+    "user": "charlie",
+    "source_ip": "192.0.2.40",
+    "event_name": "PutUserPolicy",
+    "status": "Success",
+    "role": "Admin",
+    "privileged": true
+  },
+  {
+    "event_id": "EVT007",
+    "timestamp": "2026-10-15T10:00:00Z",
+    "user": "alice",
+    "source_ip": "203.0.113.10",
+    "event_name": "GetObject",
+    "status": "Success",
+    "role": "Developer",
+    "privileged": false
+  }
+]
